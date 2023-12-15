@@ -13,7 +13,6 @@ Welcome to **Underwater Adventures**, a web programming project created by Ziad 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Deployment](#deployment)
-- [License](#license)
 
 ## About
 
@@ -50,9 +49,5 @@ If you'd like to contribute to the project, feel free to fork the repository and
 ## Deployment
 
 The website is deployed and accessible at [Underwater Adventures](https://zex404.github.io/underwater-adventures/).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 Feel free to explore, learn, and enjoy the wonders of underwater life with Underwater Adventures!
