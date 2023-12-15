@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Underwater Animals</title>
   </head>
@@ -21,9 +23,6 @@
     <li><a href="#">home</a></li>
     <li><a href="#">about</a></li>
     <li><a href="#">contact</a></li>
-    <li><a href="#">blogs</a></li>
-    <li><a href="#">login</a></li>
-
   </ul>
 </nav>
 
@@ -41,14 +40,13 @@
     <h1>Underwater</h1>
     <h2>adventures</h2>
 
-    <a href="#"><button>join now</button></a>
+    <a href="#"><button>Start</button></a>
 
-    <div class="icons">
+    <!-- <div class="icons">
       <a href="#" class="fab fa-facebook-f"></a>
       <a href="#" class="fab fa-twitter"></a>
       <a href="#" class="fab fa-instagram"></a>
-
-    </div>
+    </div> -->
   </div>
 
   <div class="video-container">
@@ -85,8 +83,23 @@
       $('.fa-bars').removeClass('fa-times');
     });
 
-    
+    $('.dot1').click(function(){
+      $('.vid1').css('display', 'block');
+      $('.vid2').css('display', 'none');
+      $('.vid3').css('display', 'none');
+    });
 
+    $('.dot2').click(function(){
+      $('.vid1').css('display', 'none');
+      $('.vid2').css('display', 'block');
+      $('.vid3').css('display', 'none');
+    });
+
+    $('.dot3').click(function(){
+      $('.vid1').css('display', 'none');
+      $('.vid2').css('display', 'none');
+      $('.vid3').css('display', 'block');
+    });
   });
 
 </script>

@@ -9,8 +9,9 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'Cairo', sans-serif;
     transition: all .2s linear;
+    user-select: none; 
 }
 
 html{
@@ -209,7 +210,7 @@ header .fa-bars{
     .navbar ul{
         height: 100%;
         width: 35rem;
-        background: var(--black);
+        background: #2c3e50df;
         flex-flow: column;
         justify-content: center;
     }
@@ -227,7 +228,15 @@ header .fa-bars{
     }
 }
 
+@media(max-width:550px){
+    .container .content h1{
+        font-size: 5rem;
+    }
 
+    .container .content h2{
+        font-size: 4rem;
+    }
+}
 
 
 
