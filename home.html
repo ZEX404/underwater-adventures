@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <title>Underwater adventures</title>
+
     <style>
         :root{
             --black:#2c3e50;
@@ -31,67 +32,90 @@
 
         .container{
             background: linear-gradient(45deg, #003052, teal);
+            padding: 15px 9%;
+            padding-bottom: 100px;
         }
 
+        .container .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 2px;
+        }
+
+        .container .box-container .box img{
+            height: 230px;
+            width: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .container .box-container .box{
+            padding: 30px 20px;
+            border-radius: 5px;
+            margin: 1rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            text-align: center;
+        }
+
+        .container .box-container .box:hover{
+            background: #ffffff10;
+        }
+
+        .container .box-container .box p{
+            height:60px;
+            line-height:20px; /* Height / no. of lines to display */
+            overflow:hidden;
+        }
 
     </style>
+
   </head>
     
   <body>
     <div class="container">
-        <h1 class="heading">Animals</h1>
+        <h1 class="heading"></h1>
         <div class="box-container">
             
             <div class="box">
                 <img src="assets/images/img1.jpg" alt="">
                 <h3>Peacock Mantis Shrimp</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim possimus, eos sint praesentium delectus eius laudantium voluptates ipsa odio voluptate nemo, ducimus officia at minima aperiam consectetur iusto totam!</p>
-                <a href="#" class="btn">Read more</a>
+                <p>Found in the Indian and tropical western Pacific oceans, the peacock mantis shrimp is a candy-colored crustacean known for its ability to quickly “punch” prey with its front two appendages. According to Oceana, the international ocean preservation advocacy group, this shrimp’s punch is one of the fastest movements in the animal kingdom—so much so, that it’s strong enough to break an aquarium’s glass wall. But no worries: They mostly only use their fists of steel to break open mollusks and dismember crabs.</p>
             </div>
 
             <div class="box">
                 <img src="assets/images/img2.jpg" alt="">
                 <h3>Pink See-Through Fantasia</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim possimus, eos sint praesentium delectus eius laudantium voluptates ipsa odio voluptate nemo, ducimus officia at minima aperiam consectetur iusto totam!</p>
-                <a href="#" class="btn">Read more</a>
+                <p>Its name makes it sound like a piece of sexy lingerie, but don’t be fooled: the pink see-through fantasia is a sea cucumber, found about 1.5 miles deep into the Celebes Sea in the western Pacific, east of Borneo. It was only discovered a little over a decade ago, back in 2007, but the curious sea cucumber has a survival tactic that points to its longtime evolution: bioluminescence to ward off predators. The pink see-through fantasia is named for its transparent skin, through which its mouth, anus, and intestines are all visible.</p>
             </div>
 
             <div class="box">
                 <img src="assets/images/img3.jpg" alt="">
                 <h3>Frogfish</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim possimus, eos sint praesentium delectus eius laudantium voluptates ipsa odio voluptate nemo, ducimus officia at minima aperiam consectetur iusto totam!</p>
-                <a href="#" class="btn">Read more</a>
+                <p>It’s so easy to miss the frogfish, because these types of anglerfish (there are over 50 species of them) are nearly identical to their surroundings—mostly coral reefs. They resemble sponges or algae-covered rocks and come in pretty much every color and texture imaginable. Some frogfish even use their camouflage not to hide, but rather, to mimic poison sea slugs. No matter their appearance, one thing all species of frogfish have in common is their strange mode of locomotion. Although they can swim, most walk along their pectoral fins, which have evolved into arm-like limbs, including a joint that resembles an elbow.</p>
             </div>
 
             <div class="box">
                 <img src="assets/images/img4.jpg" alt="">
                 <h3>Ribbon Eel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim possimus, eos sint praesentium delectus eius laudantium voluptates ipsa odio voluptate nemo, ducimus officia at minima aperiam consectetur iusto totam!</p>
-                <a href="#" class="btn">Read more</a>
+                <p>Usually seen nestled into burrows around coral reefs, the ribbon eel (sometimes called the leaf-nosed moray eel) lives in Indonesian waters from East Africa, to southern Japan, Australia, and French Polynesia. The juveniles start out black, with a pale yellow strip along the fins, and as they grow, transitions to a bright blue and yellow coloring. These eels are considered “protrandic hermaphrodites,” meaning they change sex from male to female several times throughout their lives.</p>
             </div>
 
             <div class="box">
                 <img src="assets/images/img5.jpg" alt="">
                 <h3>Frilled Shark</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim possimus, eos sint praesentium delectus eius laudantium voluptates ipsa odio voluptate nemo, ducimus officia at minima aperiam consectetur iusto totam!</p>
-                <a href="#" class="btn">Read more</a>
+                <p>The frilled shark, Chlamydoselachus anguineus, is one of the gnarliest looking creatures in the sea. If it looks like an ancient beast, that’s because it is: the prehistoric creature’s roots go back 80 million years. The frilled shark can grow to about seven feet long and is named for the frilly appearance of its gills. Although shark in name, these animals swim in a distinctly serpentine fashion, much like an eel. They mostly feed on squid, usually swallowing their prey whole.</p>
             </div>
 
             <div class="box">
                 <img src="assets/images/img6.jpg" alt="">
                 <h3>Christmas Tree Worm</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim possimus, eos sint praesentium delectus eius laudantium voluptates ipsa odio voluptate nemo, ducimus officia at minima aperiam consectetur iusto totam!</p>
-                <a href="#" class="btn">Read more</a>
+                <p>Scientists found this strange creature at the Great Barrier Reef’s Lizard Island and named it, aptly, the Christmas tree worm. The spiral “branches” are actually the worm’s breathing and feeding apparatuses, while the worm itself lives in a tube. These tree-like crowns are covered in hair-like appendages called radioles. These are used for breathing and catching prey, but they can be withdrawn if the Christmas tree worm feels threatened.</p>
             </div>
 
 
         </div>
     </div>
 
-
-
-
   </body>
-
 
 </html>
