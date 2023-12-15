@@ -1,6 +1,6 @@
 # Underwater Adventures
 
-![Underwater Adventures Logo](link-to-logo.png)
+![Underwater Adventures Logo](https://raw.githubusercontent.com/ZEX404/underwater-adventures/main/assets/images/logo.png)
 
 Welcome to **Underwater Adventures**, a web programming project created by Ziad Salama and Mark Michael for our university course. This website is designed to provide information about fascinating underwater creatures that you might not have heard about before.
 
