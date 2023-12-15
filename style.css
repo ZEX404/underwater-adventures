@@ -12,6 +12,7 @@
     font-family: 'Cairo', sans-serif;
     transition: all .2s linear;
     user-select: none; 
+    text-decoration: none;
 }
 
 html{
@@ -36,7 +37,6 @@ header{
 header .logo{
     font-size: 1.6rem;
     color: #fff;
-    text-decoration: none;
     text-shadow: var(--text-shadow);
 }
 
@@ -53,7 +53,6 @@ header .logo{
 
 .navbar ul li a{
     font-size: 2rem;
-    text-decoration: none;
     color: #fff;
 }
 
@@ -126,7 +125,6 @@ header .fa-bars{
     text-align: center;
     border-radius: 5rem;
     background: #fff;
-    text-decoration: none;
     color: var(--blue);
     text-shadow: none;
     box-shadow: var(--box-shadow);
@@ -158,8 +156,6 @@ header .fa-bars{
     display: block;
 }
 
-
-
 .container .controls{
     position: absolute;
     bottom: 15%; left: 50%;
@@ -180,7 +176,6 @@ header .fa-bars{
 .container .controls .dots:hover{
     background: var(--black);
 }
-
 
 @keyframes vid{
     0%{
