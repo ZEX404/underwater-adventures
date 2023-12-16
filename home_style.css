@@ -1,0 +1,264 @@
+:root{
+    --black:#2c3e50;
+    --blue:#45aaf2;
+    --text-shadow:.1rem .1rem .3rem #333;
+    --box-shadow:.1rem .1rem .3rem #333;
+}
+
+
+body {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    transition: all .2s linear;
+    user-select: none; 
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 400px 0;
+    margin: 100px;
+}
+
+header .logo{
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: var(--text-shadow);}
+
+h1{
+    color: var(--blue); /* Yellow color */
+}
+
+h2 {
+    color: #fff;
+}
+p {
+    color: #d4d4d4; /* Light gray color */
+}
+
+section {
+    padding: 50px;
+    background-color: rgba(29, 36, 46, 0.7); /* Dark semi-transparent background */
+    border-radius: 10px;
+    margin: 90px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    background-color: -var(-blue);
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 23.7%; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(29, 36, 46, 0.7);
+  }
+  
+  .navbar a.active {
+    background-color: rgba(29, 36, 46, 0.7);
+  }
+  .fishes{
+    text-align:center;
+    margin-top:-20px;
+    color:#45aaf2;
+    font-size:25px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  .img{
+    border-radius: 40px;
+    height: 300px; width:410px;
+
+
+  }
+
+  /* CSS */
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: vid .5s alternate;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: vid .5s alternate;
+}
+
+
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:3rem 2rem;
+}
+
+.container .content{
+    text-align: center;
+    text-shadow: var(--text-shadow);
+
+}
+
+.contaienr .product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+
+
+/* CSS */
+.CONT{
+    float: left;
+    position: relative;
+}
+
+.image {
+
+    height: auto;
+    display:grid;
+    margin:15ch;
+}
+
+.overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 410px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(29, 36, 46, 0.7);
+    position: absolute;
+    border-radius: 40px;
+}
+
+.CONT:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    height: 900px;
+    background:  linear-gradient(45deg, #003052, teal); /* Dark semi-transparent background for the modal */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#caption{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    width: 80%;
+    padding: 20px 0;
+    height: 200px;
+    font-size: 25px;
+    font-family: 'Cairo', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+#description {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    width: 80%;
+
+    height: 200px;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    color: #ffffff;
+}
+
+
+#modalImage {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 60px ;
+}
+
+.image-grid .CONT {
+    width: 100%;
+}

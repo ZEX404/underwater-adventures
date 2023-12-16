@@ -4,201 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="home_style.css">
+
     <title>Underwater adventures</title>
+</head>
 
-    <style>
-        :root{
-            --black:#2c3e50;
-            --blue:#45aaf2;
-            --text-shadow:.1rem .1rem .3rem #333;
-            --box-shadow:.1rem .1rem .3rem #333;
-        }
-        
-        *{
-            margin: 0; padding: 0;
-            box-sizing: border-box;
-            outline: none; border: none;
-            text-decoration: none;
-            text-transform: capitalize;
-            transition: .2s linear;
-            font-family: 'Cairo', sans-serif;
-            user-select: none; 
-            color: #fff;
-        }
+<body>
 
-        .container{
-            background: linear-gradient(45deg, #003052, teal);
-            padding: 15px 9%;
-            padding-bottom: 100px;
-        }
+    <video id="video" autoplay loop muted>
+        <source src="assets/vid1.mp4" type="video/mp4">
+        <source src="assets/vid2.mp4" type="video/mp4">
+        <source src="assets/vid3.mp4" type="video/mp4">
+    </video>
 
-        .container .box-container{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2px;
-            animation: transitionIn 1s;
-        }
-
-        .container .box-container .box{
-            padding: 30px 20px;
-            border-radius: 5px;
-            margin: 1rem;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-            text-align: center;
-            border:1px solid rgba(255, 255, 255, 0.18);
-            cursor: pointer;
-        }
-
-        .container .box-container .box:hover{
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 10px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            transform: scale(1.03);
-        }
-
-        .container .box-container .box img{
-            height: 230px;
-            width: 250px;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-
-        .container .box-container .box h3{
-            font-size: 22px;
-            padding: 10px, 0;
-        }
-
-        .container .box-container .box p{
-            height:min-content;
-            color: #c3c3c3;
-            text-align: center;
-            width: 100%;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            font-size: 14px;
-        }
-
-        @media(max-width: 768px){
-            .container{
-                padding: 20px;
-            }
-        }
-
-        @keyframes transitionIn {
-            from{
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to{
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
-
-  </head>
-    
-  <body>
     <div class="container">
-        <div class="box-container">
-            
-            <div class="box">
-                <img src="assets/images/img1.jpg" alt="">
-                <h3>Peacock Mantis Shrimp</h3>
-                <p>Found in the Indian and tropical western Pacific oceans, the peacock mantis shrimp is a candy-colored crustacean known for its ability to quickly “punch” prey with its front two appendages. According to Oceana, the international ocean preservation advocacy group, this shrimp’s punch is one of the fastest movements in the animal kingdom—so much so, that it’s strong enough to break an aquarium’s glass wall. But no worries: They mostly only use their fists of steel to break open mollusks and dismember crabs.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img2.jpg" alt="">
-                <h3>Pink See-Through Fantasia</h3>
-                <p>Its name makes it sound like a piece of sexy lingerie, but don’t be fooled: the pink see-through fantasia is a sea cucumber, found about 1.5 miles deep into the Celebes Sea in the western Pacific, east of Borneo. It was only discovered a little over a decade ago, back in 2007, but the curious sea cucumber has a survival tactic that points to its longtime evolution: bioluminescence to ward off predators. The pink see-through fantasia is named for its transparent skin, through which its mouth, anus, and intestines are all visible.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img3.jpg" alt="">
-                <h3>Frogfish</h3>
-                <p>It’s so easy to miss the frogfish, because these types of anglerfish (there are over 50 species of them) are nearly identical to their surroundings—mostly coral reefs. They resemble sponges or algae-covered rocks and come in pretty much every color and texture imaginable. Some frogfish even use their camouflage not to hide, but rather, to mimic poison sea slugs. No matter their appearance, one thing all species of frogfish have in common is their strange mode of locomotion. Although they can swim, most walk along their pectoral fins, which have evolved into arm-like limbs, including a joint that resembles an elbow.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img4.jpg" alt="">
-                <h3>Ribbon Eel</h3>
-                <p>Usually seen nestled into burrows around coral reefs, the ribbon eel (sometimes called the leaf-nosed moray eel) lives in Indonesian waters from East Africa, to southern Japan, Australia, and French Polynesia. The juveniles start out black, with a pale yellow strip along the fins, and as they grow, transitions to a bright blue and yellow coloring. These eels are considered “protrandic hermaphrodites,” meaning they change sex from male to female several times throughout their lives.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img5.jpg" alt="">
-                <h3>Frilled Shark</h3>
-                <p>The frilled shark, Chlamydoselachus anguineus, is one of the gnarliest looking creatures in the sea. If it looks like an ancient beast, that’s because it is: the prehistoric creature’s roots go back 80 million years. The frilled shark can grow to about seven feet long and is named for the frilly appearance of its gills. Although shark in name, these animals swim in a distinctly serpentine fashion, much like an eel. They mostly feed on squid, usually swallowing their prey whole.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img6.jpg" alt="">
-                <h3>Christmas Tree Worm</h3>
-                <p>Scientists found this strange creature at the Great Barrier Reef’s Lizard Island and named it, aptly, the Christmas tree worm. The spiral “branches” are actually the worm’s breathing and feeding apparatuses, while the worm itself lives in a tube. These tree-like crowns are covered in hair-like appendages called radioles. These are used for breathing and catching prey, but they can be withdrawn if the Christmas tree worm feels threatened.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img7.jpg" alt="">
-                <h3>Box Crab</h3>
-                <p>Like so many other sea creatures, the box crab is a master of disguise. In this case, the crustacean—which mostly keeps to the seabed—buries itself beneath the sand, with just its eyes protruding from the mucky depths. One of the most fascinating aspects of the box crab’s life cycle is its mating habits, which literally redefine what it means to be swept off your feet. When the male box crab has found its mate, it grasps onto her with its claws and carries her around the sea floor until she molts her shell.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img8.jpg" alt="">
-                <h3>The Squidworm</h3>
-                <p>Researchers with the Census of Marine Zooplankton first discovered the squidworm in 2007 during a cruise in a remotely operated vehicle some 1.8 miles underwater. The funky-looking fish is named for the 10 appendages protruding from its head, which look like tentacles. The squidworm uses these to collect debris falling from the open waters above, known as “marine snow.”</p>
-            </div>
-            
-            <div class="box">
-                <img src="assets/images/img9.jpg" alt="">
-                <h3>Giant Isopod</h3>
-                <p>These guys are native to chilly, deep waters and can grow to be quite large; in 2010, a remotely operated underwater vehicle discovered a giant isopod measuring 2.5 feet. These crustaceans, which sort of resemble a massive woodworm, are carnivores and usually feed on dead animals that fall down from the ocean’s surface. Despite their discovery back in 1879, these creatures mostly remain a mystery. However, it’s believed that giant isopods grow so large in order to withstand the pressure at the bottom of the sea.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img10.jpg" alt="">
-                <h3>Nudibranch</h3>
-                <p>With over 3,000 different species on record, the nudibranch is an extremely versatile kind of sea slug. These little guys are found pretty much everywhere, in both shallow and deep waters, from the North and South poles and into the tropics. There are two distinct kinds: dorid nudibranchs, which are smooth with feather-like gills on their back to help them breathe; and aeolid nudibranchs, which breath through a different kind of organ, also located on their backs, called cerata. Because the tiny nudibranch lacks a shell, it instead protects itself with bright camouflage, meant as a warning signal. But perhaps their wildest adaptation of all is the ability to quite literally swallow, digest, and reuse stinging cells from prey.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img11.jpg" alt="">
-                <h3>Sea Angel</h3>
-                <p>Although they’re called sea angels, these creatures are actually predatory sea snails. This particular specimen, Platybrachium antarcticum, “flies through the deep Antarctic waters hunting the shelled pteropods (another type of snail) on which it feeds,” according to the Marine Census of Life. Sea angels have special parapodia, or lateral extensions of the foot, that help to propel them through the water.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img12.jpg" alt="">
-                <h3>Gulper Eel</h3>
-                <p>The gulper eel (also referred to as the pelican eel) is named for its massive mouth and jaw, which helps them to swallow prey whole. They can grow up to six feet in length and their huge mouths allow them to hunt down meals that are larger than them. This usually happens when food is scarce—it’s believed that gulper eels usually eat crustaceans and other small marine animals.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img13.jpg" alt="">
-                <h3>Marrus Orthocanna</h3>
-                <p>Like a multi-stage rocket, this bizarre microscopic creature, Marrus orthocanna is made up of multiple repeated units, including tentacles and multiple stomachs. Technically, they are physonect siphonophores, which are related to the Portugese man o’war. Like ants, a colony made up of many individuals has attributes resembling a single organism.</p>
-            </div>
-
-            <div class="box">
-                <img src="assets/images/img14.jpg" alt="">
-                <h3>Giant Squid</h3>
-                <p>The Giant Squid, Architeuthis dux, is absolutely the stuff of nightmares. The largest one ever recorded came in at a whopping 43 feet long—nearly half the size of a blue whale. Earlier this year, scientists created a draft genome sequence for the giant squid, in a bid to better understand it. With about 2.7 billion DNA base pairs, its genome is about 90 percent the size of the human genome. Beyond that, scientists don’t know a whole lot about the giant beast or its habits, because most of what we know comes from their carcasses, which wash up on the shore. Most of the time, the giant squid lives in waters so deep that we never see them, adding to their intrigue.</p>
-            </div>
-
+        <div class="content">
+            <h1 style="text-transform: uppercase; font-family: 'Cairo', sans-serif; font-size: 8ch;">Underwater</h1>
+            <h2 style="text-transform: uppercase; font-family: 'Cairo', sans-serif; font-size:6ch;">Adventures</h2>
         </div>
     </div>
 
-  </body>
+    <!-- Fishes Section -->
+    <section class=" image-grid" classid="fishes-section" style="padding-bottom: 100px;">
+
+
+
+        <div class="CONT" onclick="openModal('Peacock Mantis Shrimp', 'Found in the Indian and tropical western Pacific oceans, the peacock mantis shrimp is a candy-colored crustacean known for its ability to quickly “punch” prey with its front two appendages. According to Oceana, the international ocean preservation advocacy group, this shrimp’s punch is one of the fastest movements in the animal kingdom—so much so, that it’s strong enough to break an aquarium’s glass wall. But no worries: They mostly only use their fists of steel to break open mollusks and dismember crabs.')">
+            <div class="box">
+                <img class="img" src="assets/images/img1.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Peacock Mantis Shrimp</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="CONT" onclick="openModal('Pink See-Through Fantasia', 'Its name makes it sound like a piece of sexy lingerie, but don’t be fooled: the pink see-through fantasia is a sea cucumber, found about 1.5 miles deep into the Celebes Sea in the western Pacific, east of Borneo. It was only discovered a little over a decade ago, back in 2007, but the curious sea cucumber has a survival tactic that points to its longtime evolution: bioluminescence to ward off predators. The pink see-through fantasia is named for its transparent skin, through which its mouth, anus, and intestines are all visible.')">
+            <div class="box">
+                <div class="product-container">
+                        <img class="img" src="assets/images/img2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Pink See-Through Fantasia</div>
+                        </div>
+                 </div>
+            </div> 
+        </div>  
+            
+        
+
+
+
+        <div class="CONT" onclick="openModal('Frogfish', 'It’s so easy to miss the frogfish, because these types of anglerfish (there are over 50 species of them) are nearly identical to their surroundings—mostly coral reefs. They resemble sponges or algae-covered rocks and come in pretty much every color and texture imaginable. Some frogfish even use their camouflage not to hide, but rather, to mimic poison sea slugs. No matter their appearance, one thing all species of frogfish have in common is their strange mode of locomotion. Although they can swim, most walk along their pectoral fins, which have evolved into arm-like limbs, including a joint that resembles an elbow.')">
+            <div class="box">
+
+                <img class="img" src="assets/images/img3.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Frogfish</div>
+                </div>
+            </div> 
+        </div>
+
+
+
+
+        <div class="CONT" onclick="openModal('Ribbon Eel', 'Usually seen nestled into burrows around coral reefs, the ribbon eel (sometimes called the leaf-nosed moray eel) lives in Indonesian waters from East Africa, to southern Japan, Australia, and French Polynesia. The juveniles start out black, with a pale yellow strip along the fins, and as they grow, transitions to a bright blue and yellow coloring. These eels are considered “protrandic hermaphrodites,” meaning they change sex from male to female several times throughout their lives.')">
+            <div class="box" >
+
+                <img class="img" src="assets/images/img4.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Ribbon Eel</div>
+                </div>
+            </div>  
+        </div>
+
+        
+
+
+
+
+            <div class="CONT" onclick="openModal('Frilled Shark', 'The frilled shark, Chlamydoselachus anguineus, is one of the gnarliest looking creatures in the sea. If it looks like an ancient beast, that’s because it is: the prehistoric creature’s roots go back 80 million years. The frilled shark can grow to about seven feet long and is named for the frilly appearance of its gills. Although shark in name, these animals swim in a distinctly serpentine fashion, much like an eel. They mostly feed on squid, usually swallowing their prey whole.')">
+                <div class="box">
+
+                    <img class="img" src="assets/images/img5.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Frilled Shark</div>
+                    </div>
+                </div>
+            </div>
+                
+
+
+
+            <div class="CONT" onclick="openModal('Christmas Tree Worm', 'Scientists found this strange creature at the Great Barrier Reef’s Lizard Island and named it, aptly, the Christmas tree worm. The spiral “branches” are actually the worm’s breathing and feeding apparatuses, while the worm itself lives in a tube. These tree-like crowns are covered in hair-like appendages called radioles. These are used for breathing and catching prey, but they can be withdrawn if the Christmas tree worm feels threatened.')">
+                <div class="box">
+
+                    <img class="img" src="assets/images/img6.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Christmas Tree Worm</div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="CONT" onclick="openModal('Box Crab', 'Like so many other sea creatures, the box crab is a master of disguise. In this case, the crustacean—which mostly keeps to the seabed—buries itself beneath the sand, with just its eyes protruding from the mucky depths. One of the most fascinating aspects of the box crab’s life cycle is its mating habits, which literally redefine what it means to be swept off your feet. When the male box crab has found its mate, it grasps onto her with its claws and carries her around the sea floor until she molts her shell.')">
+                    <div class="box">
+    
+                        <img class="img" src="assets/images/img7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Box Crab</div>
+                        </div>
+                    </div>
+            </div>
+            
+
+
+            <div class="CONT" onclick="openModal('The Squidworm', 'Researchers with the Census of Marine Zooplankton first discovered the squidworm in 2007 during a cruise in a remotely operated vehicle some 1.8 miles underwater. The funky-looking fish is named for the 10 appendages protruding from its head, which look like tentacles. The squidworm uses these to collect debris falling from the open waters above, known as “marine snow.')">
+                        <div class="box">
+        
+                            <img class="img" src="assets/images/img8.jpg" alt="">
+                            <div class="overlay">
+                                <div class="text">The Squidworm</div>
+                            </div>
+                        </div>
+            </div>
+
+
+                        <div class="CONT" onclick="openModal('Giant Isopod', 'These guys are native to chilly, deep waters and can grow to be quite large; in 2010, a remotely operated underwater vehicle discovered a giant isopod measuring 2.5 feet. These crustaceans, which sort of resemble a massive woodworm, are carnivores and usually feed on dead animals that fall down from the ocean’s surface. Despite their discovery back in 1879, these creatures mostly remain a mystery. However, it’s believed that giant isopods grow so large in order to withstand the pressure at the bottom of the sea.')">
+                            <div class="box">
+            
+                                <img class="img" src="assets/images/img9.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="text">Giant Isopod</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                            <div class="CONT" onclick="openModal('Nudibranch', 'With over 3,000 different species on record, the nudibranch is an extremely versatile kind of sea slug. These little guys are found pretty much everywhere, in both shallow and deep waters, from the North and South poles and into the tropics. There are two distinct kinds: dorid nudibranchs, which are smooth with feather-like gills on their back to help them breathe; and aeolid nudibranchs, which breath through a different kind of organ, also located on their backs, called cerata. Because the tiny nudibranch lacks a shell, it instead protects itself with bright camouflage, meant as a warning signal. But perhaps their wildest adaptation of all is the ability to quite literally swallow, digest, and reuse stinging cells from prey.')">
+                                <div class="box">
+                
+                                    <img class="img" src="assets/images/img10.jpg" alt="">
+                                    <div class="overlay">
+                                        <div class="text">Nudibranch</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                                <div class="CONT" onclick="openModal('Sea Angel', 'Although they’re called sea angels, these creatures are actually predatory sea snails. This particular specimen, Platybrachium antarcticum, “flies through the deep Antarctic waters hunting the shelled pteropods (another type of snail) on which it feeds,” according to the Marine Census of Life. Sea angels have special parapodia, or lateral extensions of the foot, that help to propel them through the water.')">
+                                    <div class="box">
+                    
+                                        <img class="img" src="assets/images/img11.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="text">Sea Angel</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                    <div class="CONT" onclick="openModal('Gulper Eel', 'The gulper eel (also referred to as the pelican eel) is named for its massive mouth and jaw, which helps them to swallow prey whole. They can grow up to six feet in length and their huge mouths allow them to hunt down meals that are larger than them. This usually happens when food is scarce—it’s believed that gulper eels usually eat crustaceans and other small marine animals.')">
+                                        <div class="box">
+                        
+                                            <img class="img" src="assets/images/img12.jpg" alt="">
+                                            <div class="overlay">
+                                                <div class="text">Gulper Eel</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                        <div class="CONT" onclick="openModal('Marrus Orthocanna', 'Like a multi-stage rocket, this bizarre microscopic creature, Marrus orthocanna is made up of multiple repeated units, including tentacles and multiple stomachs. Technically, they are physonect siphonophores, which are related to the Portugese man o’war. Like ants, a colony made up of many individuals has attributes resembling a single organism.')">
+                                            <div class="box">
+                            
+                                                <img class="img" src="assets/images/img13.jpg" alt="">
+                                                <div class="overlay">
+                                                    <div class="text">Marrus Orthocanna</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                            <div class="CONT" onclick="openModal('Giant Squid', 'The Giant Squid, Architeuthis dux, is absolutely the stuff of nightmares. The largest one ever recorded came in at a whopping 43 feet long—nearly half the size of a blue whale. Earlier this year, scientists created a draft genome sequence for the giant squid, in a bid to better understand it. With about 2.7 billion DNA base pairs, its genome is about 90 percent the size of the human genome. Beyond that, scientists don’t know a whole lot about the giant beast or its habits, because most of what we know comes from their carcasses, which wash up on the shore. Most of the time, the giant squid lives in waters so deep that we never see them, adding to their intrigue.')">
+                                                <div class="box">
+                                
+                                                    <img class="img" src="assets/images/img14.jpg" alt="">
+                                                    <div class="overlay">
+                                                        <div class="text">Giant Squid</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        <!-- Add more similar sections for other images -->
+
+    </section>
+
+        <!-- Add more similar sections for other images -->
+    </section>
+
+    <!-- Modal window -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div id="caption"></div>
+            <div id="description"></div>
+        </div>
+    </div>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to our website dedicated to exploring the fascinating world of underwater animals. Dive into the depths with us!</p>
+    </section>
+
+    <section>
+        <h2>Featured Creatures</h2>
+        <p>Explore the diverse range of aquatic life, from vibrant fish to mysterious sea creatures.</p>
+        <!-- Add more content here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Underwater Animals. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(name, description) {
+            var modal = document.getElementById('myModal');
+            var modalImage = document.getElementById('modalImage');
+            var caption = document.getElementById('caption');
+            var desc = document.getElementById('description');
+
+            modal.style.display = 'block';
+            modalImage.src = event.target.src;
+            caption.innerHTML = name;
+            desc.innerHTML = description;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
+    </script>
+
+</body>
 
 </html>
+``
