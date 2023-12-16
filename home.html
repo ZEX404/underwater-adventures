@@ -38,8 +38,27 @@
 
         .container .box-container{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2px;
+        }
+
+        .container .box-container .box{
+            padding: 30px 20px;
+            border-radius: 5px;
+            margin: 1rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            text-align: center;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            cursor: pointer;
+        }
+
+        .container .box-container .box:hover{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transform: scale(1.03);
         }
 
         .container .box-container .box img{
@@ -49,22 +68,29 @@
             border-radius: 20px;
         }
 
-        .container .box-container .box{
-            padding: 30px 20px;
-            border-radius: 5px;
-            margin: 1rem;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-            text-align: center;
-        }
-
-        .container .box-container .box:hover{
-            background: #ffffff10;
+        .container .box-container .box h3{
+            font-size: 22px;
+            padding: 10px, 0;
         }
 
         .container .box-container .box p{
-            height:60px;
-            line-height:20px; /* Height / no. of lines to display */
-            overflow:hidden;
+            height:min-content;
+            color: #c3c3c3;
+            text-align: center;
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 14px;
+        }
+
+       
+
+        @media(max-width: 768px){
+            .container{
+                padding: 20px;
+            }
         }
 
     </style>
@@ -112,6 +138,53 @@
                 <p>Scientists found this strange creature at the Great Barrier Reef’s Lizard Island and named it, aptly, the Christmas tree worm. The spiral “branches” are actually the worm’s breathing and feeding apparatuses, while the worm itself lives in a tube. These tree-like crowns are covered in hair-like appendages called radioles. These are used for breathing and catching prey, but they can be withdrawn if the Christmas tree worm feels threatened.</p>
             </div>
 
+            <div class="box">
+                <img src="assets/images/img7.jpg" alt="">
+                <h3>Box Crab</h3>
+                <p>Like so many other sea creatures, the box crab is a master of disguise. In this case, the crustacean—which mostly keeps to the seabed—buries itself beneath the sand, with just its eyes protruding from the mucky depths. One of the most fascinating aspects of the box crab’s life cycle is its mating habits, which literally redefine what it means to be swept off your feet. When the male box crab has found its mate, it grasps onto her with its claws and carries her around the sea floor until she molts her shell.</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/img8.jpg" alt="">
+                <h3>The Squidworm</h3>
+                <p>Researchers with the Census of Marine Zooplankton first discovered the squidworm in 2007 during a cruise in a remotely operated vehicle some 1.8 miles underwater. The funky-looking fish is named for the 10 appendages protruding from its head, which look like tentacles. The squidworm uses these to collect debris falling from the open waters above, known as “marine snow.”</p>
+            </div>
+            
+            <div class="box">
+                <img src="assets/images/img9.jpg" alt="">
+                <h3>Giant Isopod</h3>
+                <p>These guys are native to chilly, deep waters and can grow to be quite large; in 2010, a remotely operated underwater vehicle discovered a giant isopod measuring 2.5 feet. These crustaceans, which sort of resemble a massive woodworm, are carnivores and usually feed on dead animals that fall down from the ocean’s surface. Despite their discovery back in 1879, these creatures mostly remain a mystery. However, it’s believed that giant isopods grow so large in order to withstand the pressure at the bottom of the sea.</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/img10.jpg" alt="">
+                <h3>Nudibranch</h3>
+                <p>With over 3,000 different species on record, the nudibranch is an extremely versatile kind of sea slug. These little guys are found pretty much everywhere, in both shallow and deep waters, from the North and South poles and into the tropics. There are two distinct kinds: dorid nudibranchs, which are smooth with feather-like gills on their back to help them breathe; and aeolid nudibranchs, which breath through a different kind of organ, also located on their backs, called cerata. Because the tiny nudibranch lacks a shell, it instead protects itself with bright camouflage, meant as a warning signal. But perhaps their wildest adaptation of all is the ability to quite literally swallow, digest, and reuse stinging cells from prey.</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/img11.jpg" alt="">
+                <h3>Sea Angel</h3>
+                <p>Although they’re called sea angels, these creatures are actually predatory sea snails. This particular specimen, Platybrachium antarcticum, “flies through the deep Antarctic waters hunting the shelled pteropods (another type of snail) on which it feeds,” according to the Marine Census of Life. Sea angels have special parapodia, or lateral extensions of the foot, that help to propel them through the water.</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/img12.jpg" alt="">
+                <h3>Gulper Eel</h3>
+                <p>The gulper eel (also referred to as the pelican eel) is named for its massive mouth and jaw, which helps them to swallow prey whole. They can grow up to six feet in length and their huge mouths allow them to hunt down meals that are larger than them. This usually happens when food is scarce—it’s believed that gulper eels usually eat crustaceans and other small marine animals.</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/img13.jpg" alt="">
+                <h3>Marrus Orthocanna</h3>
+                <p>Like a multi-stage rocket, this bizarre microscopic creature, Marrus orthocanna is made up of multiple repeated units, including tentacles and multiple stomachs. Technically, they are physonect siphonophores, which are related to the Portugese man o’war. Like ants, a colony made up of many individuals has attributes resembling a single organism.</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/img14.jpg" alt="">
+                <h3>Giant Squid</h3>
+                <p>The Giant Squid, Architeuthis dux, is absolutely the stuff of nightmares. The largest one ever recorded came in at a whopping 43 feet long—nearly half the size of a blue whale. Earlier this year, scientists created a draft genome sequence for the giant squid, in a bid to better understand it. With about 2.7 billion DNA base pairs, its genome is about 90 percent the size of the human genome. Beyond that, scientists don’t know a whole lot about the giant beast or its habits, because most of what we know comes from their carcasses, which wash up on the shore. Most of the time, the giant squid lives in waters so deep that we never see them, adding to their intrigue.</p>
+            </div>
 
         </div>
     </div>
