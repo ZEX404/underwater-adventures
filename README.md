@@ -20,7 +20,7 @@ The "Underwater Adventures" website is a project developed as part of our univer
 
 ## Creators
 
-- Ziad Salama
+- [Ziad Salama](https://www.linkedin.com/in/ziadsalama)
 - Mark Mickael
 
 ## Features
