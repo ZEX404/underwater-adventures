@@ -16,12 +16,12 @@ Welcome to **Underwater Adventures**, a web programming project for our universi
 
 ## About
 
-The "Underwater Adventures" website is a project developed as part of our university's web programming course. It showcases our skills in HTML, CSS and JavaScript, offering an interactive and informative experience about various underwater creatures. Each creature is accompanied by images, names and detailed descriptions to enhance your knowledge of the mysterious world beneath the waves.
+The "Underwater Adventures" website is a project developed as part of our university's web programming course. It showcases our skills in HTML, CSS and JavaScript, offering an interactive and informative experience about various underwater creatures with different types. Each creature is accompanied by images, names and detailed descriptions to enhance your knowledge of the mysterious world beneath the waves.
 
 ## Creators
 
-- Ziad Salama
-- Mark Mickael
+- [Ziad Salama](https://www.linkedin.com/in/ziadsalama)
+- [Mark Mekhael](https://www.linkedin.com/in/mark-adly/)
 
 ## Features
 
